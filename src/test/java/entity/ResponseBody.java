@@ -6,5 +6,7 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ResponseBody {
-private String message;
+    private String message;
+    private int studentId;
+
 }

@@ -1,6 +1,7 @@
 package steps;
 
 import static io.restassured.RestAssured.*;
+import static utilities.StudyMateAuthToken.getAuthorized;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -22,7 +23,7 @@ public class GroupTestSteps {
 
     @Given("user hits Crete Group api with valid path, parameters and headers")
     public void user_hits_crete_group_api_with_valid_path_parameters_and_headers() {
-        String token = StudyMateAuthToken.getAuthorized();
+        String token = getAuthorized();
         RequestBody requestBody = new RequestBody();
         Faker faker = new Faker();
         requestBody.setImageId("0");

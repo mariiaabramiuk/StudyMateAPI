@@ -7,9 +7,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin= {"html:target/cucumber.html", "json:target/report.json"},
-        features = "/Users/mariiazatylna/Desktop/projects/StudyMateApiProject/src/test/resources/features",
+        features = "/Users/hassonzy/Desktop/CodeWise/FrameWorks/StudyMateAPI/src/test/resources/features/StudentApiTest.feature",
         glue = "steps",
-        tags = "@GroupsTest",
+        tags = "@StudentTest",
         dryRun = false
 )
 public class Runner {
