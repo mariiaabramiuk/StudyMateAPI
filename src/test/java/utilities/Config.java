@@ -14,7 +14,6 @@ public class Config {
         try {
             FileInputStream file = new FileInputStream(path);
             properties = new Properties();
-
             properties.load(file);
         } catch (IOException e) {
             System.out.println("File not found" + path);
