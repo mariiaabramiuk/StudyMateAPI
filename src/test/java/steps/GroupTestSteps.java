@@ -118,16 +118,12 @@ public class GroupTestSteps {
         System.out.println("The group with id " + id + " was successfully removed from the trash" );
     }
 
-
-<<<<<<< HEAD
-}
-=======
     @Given("user hits Crete Group api with valid path, parameters and headers")
     public void user_hits_crete_group_api_with_valid_path_parameters_and_headers() {
         String token = getAuthorized();
         RequestBody requestBody = new RequestBody();
         Faker faker = new Faker();
-        requestBody.setImageId("0");
+        requestBody.setImageId(1);
         requestBody.setGroupName(faker.programmingLanguage().name());
         requestBody.setDateOfFinish("2023-11-06");
         requestBody.setDescription(faker.chuckNorris().fact());
@@ -157,4 +153,3 @@ public class GroupTestSteps {
 
 
 }
->>>>>>> 8152a64532d0b790ff674a6cea23daa80fa3d1ad
