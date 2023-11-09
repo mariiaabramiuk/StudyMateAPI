@@ -9,6 +9,8 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 public class RequestBody {
+
+
     private String email;
     private String password;
     private int imageId;
@@ -20,5 +22,8 @@ public class RequestBody {
     private String phoneNumber;
     private String specialization;
     private List<Integer> courses;
+    private int groupId;
+    private String studyFormat;
+    private String studentId;
 
 }

@@ -17,6 +17,7 @@ public class ResponseBody {
     private String responseBody;
     private String name;
     private String fullName;
+    private int studentId;
 }
 
 
