@@ -28,7 +28,7 @@ public class GroupTestSteps {
 
     int id;
 
-     @Given("'{int} , {string}, {string}, {string}")
+    @Given("'{int} , {string}, {string}, {string}")
     public void int_string_string_string(Integer imageId, String groupName, String dateOfFinish, String description) {
         requestBody.setImageId(imageId);
         requestBody.setGroupName(groupName);
@@ -91,7 +91,7 @@ public class GroupTestSteps {
     }
     @Then("verify successful group deletion process by asserting confirmation message {string}")
     public void verify_successful_group_deletion_process_by_asserting_confirmation_message(String confirmationMessage) {
-       Assert.assertEquals(APIRunner.getResponseBody().getMessage(),confirmationMessage);
+        Assert.assertEquals(APIRunner.getResponseBody().getMessage(),confirmationMessage);
     }
 
     @Then("hit get trash API endpoint {string} to get deleted  id by accessing name {string}")
@@ -109,7 +109,7 @@ public class GroupTestSteps {
     @Then("hit delete trash API endpoint {string} concatenated by above group id in form of path parameter")
     public void hit_delete_trash_api_endpoint_concatenated_by_above_group_id_in_form_of_path_parameter(String path) {
 
-         APIRunner.runDELETE(path,id);
+        APIRunner.runDELETE(path,id);
 
     }
     @Then("verify successful group deletion from trash by asserting confirmation message {string}")
@@ -118,16 +118,12 @@ public class GroupTestSteps {
         System.out.println("The group with id " + id + " was successfully removed from the trash" );
     }
 
-
-<<<<<<< HEAD
-}
-=======
     @Given("user hits Crete Group api with valid path, parameters and headers")
     public void user_hits_crete_group_api_with_valid_path_parameters_and_headers() {
         String token = getAuthorized();
         RequestBody requestBody = new RequestBody();
         Faker faker = new Faker();
-        requestBody.setImageId("0");
+        requestBody.setImageId(1);
         requestBody.setGroupName(faker.programmingLanguage().name());
         requestBody.setDateOfFinish("2023-11-06");
         requestBody.setDescription(faker.chuckNorris().fact());
@@ -157,4 +153,3 @@ public class GroupTestSteps {
 
 
 }
->>>>>>> 8152a64532d0b790ff674a6cea23daa80fa3d1ad
