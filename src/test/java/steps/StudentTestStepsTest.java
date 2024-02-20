@@ -15,15 +15,12 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Assert;
 import utilities.Config;
-import utilities.StudyMateAuthToken;
-
-import java.util.List;
 
 import static io.restassured.RestAssured.*;
 import static utilities.StudyMateAuthToken.getAuthorized;
 
 // This is the main class containing Cucumber steps for student-related API tests
-public class StudentTestSteps {
+public class StudentTestStepsTest {
 
     // Response object to store API responses
     Response response;

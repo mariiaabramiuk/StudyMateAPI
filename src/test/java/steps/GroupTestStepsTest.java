@@ -10,19 +10,17 @@ import entity.RequestBody;
 import entity.ResponseBody;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Assert;
 import utilities.APIRunner;
 import utilities.Config;
-import utilities.StudyMateAuthToken;
 
 import java.util.HashMap;
 import java.util.Map;
 
 
-public class GroupTestSteps {
+public class GroupTestStepsTest {
     Response response;
     RequestBody requestBody = new RequestBody();
 

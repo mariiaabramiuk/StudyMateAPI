@@ -10,11 +10,10 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Assert;
 import utilities.Config;
-import utilities.StudyMateAuthToken;
 
 import static io.restassured.RestAssured.*;
 
-public class LoginTestSteps {
+public class LoginTestStepsTest {
     Response response;
 
     @Given("User tries to hit login API with invalid username and valid password")
