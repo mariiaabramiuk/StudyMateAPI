@@ -12,5 +12,5 @@ import org.junit.runner.RunWith;
         tags = "@GroupsTest or @LoginTest or @TeachersTest",
         dryRun = false
 )
-public class Runner {
+public class RunnerTest {
 }

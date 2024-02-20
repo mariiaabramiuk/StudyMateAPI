@@ -5,7 +5,6 @@ import entity.RequestBody;
 import entity.ResponseBody;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.restassured.response.Response;
 import org.junit.Assert;
 import utilities.APIRunner;
 
@@ -15,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class TeachersSteps {
+public class TeachersStepsTest {
     RequestBody requestBody = new RequestBody();
 
     int id;
