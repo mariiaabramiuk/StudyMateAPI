@@ -1,8 +1,5 @@
 @TeachersTest
 Feature: Teacher CRUD Test
-
-  Scenario: Teacher creation test
-
   Scenario Outline: Teacher creation, Teacher info update, Reading teacher's data, deleting the teacher
     Given "<name>" , "<lastName>", "<phoneNumber>", "<email>", "<specialization>", "<courses>"
     Then hit create a teacher API endpoint "/api/instructors" to build request body and get confirmation message

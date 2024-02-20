@@ -1,7 +1,5 @@
 @GroupsTest
 Feature: Groups CRUD Test
-
-  Scenario: Group Creation Test
   Scenario Outline: Group creation, group info update, reading group's data, deleting group
     Given '<imageId> , "<groupName>", "<dateOfFinish>", "<description>"
     Then hit create group API endpoint "/api/groups" and to build request body and get confirmation message
