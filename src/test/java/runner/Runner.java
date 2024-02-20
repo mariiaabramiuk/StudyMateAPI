@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
         plugin= {"html:target/cucumber.html", "json:target/report.json", "pretty"},
         features = "/Users/mariiazatylna/Desktop/projects/StudyMateApiProject/src/test/resources/features",
         glue = "steps",
-        tags = "@GroupsTest or @LoginTest or @TeachersTest"
+        tags = "@GroupsTest or @LoginTest or @TeachersTest",
+        dryRun = false
 )
 public class Runner {
-
 }
