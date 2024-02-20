@@ -93,12 +93,13 @@
     <build>
         <plugins>
             <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.12.1</version>
-                    <configuration>
-                        <release>17</release>
-                    </configuration>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version> <!-- Use a compatible version -->
+                <configuration>
+                    <source>21</source> <!-- Set to your JDK version -->
+                    <target>21</target> <!-- Set to your JDK version -->
+                </configuration>
             </plugin>
         </plugins>
     </build>
